@@ -4,12 +4,20 @@
   "description": "Server part of the library app, part 8 of Full Stack Open 2020 course",
   "main": "index.js",
   "scripts": {
-    "test": "NODE_ENV=test jest --verbose --runInBand"
+    "start": "NODE_ENV=production node index.js",
+    "dev": "NODE_ENV=development nodemon index.js",
+    "test": "NODE_ENV=test jest --verbose --runInBand",
+    "lint": "eslint ."
   },
   "author": "Frédéric Mercille",
   "license": "MIT",
   "dependencies": {
     "apollo-server": "^2.16.1",
     "graphql": "^15.3.0"
+  },
+  "devDependencies": {
+    "eslint": "^7.7.0",
+    "jest": "^26.4.2",
+    "nodemon": "^2.0.4"
   }
 }
